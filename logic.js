@@ -25,7 +25,7 @@ function report() {
 }
 
 startButton.addEventListener("click", (e) => {
-  if (!isRunning) {
+  if (isRunning) {
     timerInterval = setInterval(tick, 1000);
     isRunning = true;
   }
@@ -34,6 +34,18 @@ startButton.addEventListener("click", (e) => {
 stopButton.addEventListener("click", (e) => {
   if (isRunning) {
     clearInterval(timerInterval);
-    // isRunning = false;
+    isRunning = false;
   }
 });
+
+resetButton.addEventListener("click", (e) => {
+  if (isRunning) {
+    resetAll();
+  }
+});
+
+function resetAll() {
+  secondsReporter.textContent = "00";
+  minutesReporter.textContent = "00";
+  hoursReporter.textContent = "00";
+}
