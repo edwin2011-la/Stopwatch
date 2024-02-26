@@ -39,6 +39,7 @@ stopButton.addEventListener("click", (e) => {
 resetButton.addEventListener("click", (e) => {
   if (isRunning) {
     resetAll();
+    isRunning = false;
   }
 });
 
