@@ -14,7 +14,7 @@ let isRunning = false;
 
 function tick() {
   seconds++;
-  // console.log(seconds);
+  console.log(seconds);
   report();
 }
 
@@ -25,17 +25,15 @@ function report() {
 }
 
 startButton.addEventListener("click", (e) => {
-  if (isRunning) {
+  if (!isRunning) {
     timerInterval = setInterval(tick, 1000);
     isRunning = true;
   }
 });
 
 stopButton.addEventListener("click", (e) => {
-  if (isRunning) {
-    clearInterval(timerInterval);
-    isRunning = false;
-  }
+  clearInterval(timerInterval);
+  isRunning = false;
 });
 
 resetButton.addEventListener("click", (e) => {
@@ -48,4 +46,7 @@ function resetAll() {
   secondsReporter.textContent = "00";
   minutesReporter.textContent = "00";
   hoursReporter.textContent = "00";
+  seconds = 0;
+  minutes = 0;
+  hours = 0;
 }
