@@ -39,7 +39,7 @@ stopButton.addEventListener("click", (e) => {
 resetButton.addEventListener("click", (e) => {
   if (isRunning) {
     resetAll();
-    isRunning = false;
+    isRunning = true;
   }
 });
 
@@ -47,6 +47,7 @@ function resetAll() {
   secondsReporter.textContent = "00";
   minutesReporter.textContent = "00";
   hoursReporter.textContent = "00";
+  clearInterval(timerInterval);
   seconds = 0;
   minutes = 0;
   hours = 0;
