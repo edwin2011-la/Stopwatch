@@ -15,24 +15,23 @@ let isRunning = false;
 function tick() {
   seconds++;
   console.log(seconds);
-  report()
+  report();
 }
 
 function report() {
-    secondsReporter.textContent = seconds.toString().padStart(2, "0")
-    minutesReporter.textContent = minutes.toString().padStart(2, "0")
-    hoursReporter.textContent = hours.toString().padStart(2, "0")
+  secondsReporter.textContent = seconds.toString().padStart(2, "0");
+  minutesReporter.textContent = minutes.toString().padStart(2, "0");
+  hoursReporter.textContent = hours.toString().padStart(2, "0");
 }
 
 startButton.addEventListener("click", (e) => {
   if (!isRunning) {
     setInterval(tick, 1000);
-    isRunning = true
+    isRunning = true;
   }
 });
 
-stopButton.addEventListener('click', (e) =>{
-  
-  isRunning = false 
+stopButton.addEventListener("click", (e) => {
+  clearInterval(isRunning);
+  isRunning = false;
 });
-
