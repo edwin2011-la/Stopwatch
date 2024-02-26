@@ -16,6 +16,20 @@ function tick() {
   seconds++;
   console.log(seconds);
   report();
+
+  if (seconds >= 59) {
+    minutes++;
+    seconds = 0;
+  }
+
+  if (minutes >= 59) {
+    hours++;
+    minutes = 0;
+  }
+
+  if (hours >= 24) {
+    hours = 1;
+  }
 }
 
 function report() {
@@ -32,15 +46,15 @@ startButton.addEventListener("click", (e) => {
 });
 
 stopButton.addEventListener("click", (e) => {
-  clearInterval(timerInterval);
-  isRunning = false;
+  if (isRunning) {
+    clearInterval(timerInterval);
+    isRunning = false;
+  }
 });
 
 resetButton.addEventListener("click", (e) => {
-  if (isRunning) {
-    resetAll();
-    isRunning = true;
-  }
+  resetAll();
+  isRunning = false;
 });
 
 function resetAll() {
