@@ -26,12 +26,14 @@ function report() {
 
 startButton.addEventListener("click", (e) => {
   if (!isRunning) {
-    setInterval(tick, 1000);
+    timerInterval = setInterval(tick, 1000);
     isRunning = true;
   }
 });
 
 stopButton.addEventListener("click", (e) => {
-  clearInterval(isRunning);
-  isRunning = false;
+  if (isRunning) {
+    clearInterval(timerInterval);
+    isRunning = false;
+  }
 });
