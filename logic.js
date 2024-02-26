@@ -14,7 +14,7 @@ let isRunning = false;
 
 function tick() {
   seconds++;
-  console.log(seconds);
+  // console.log(seconds);
   report();
 }
 
@@ -34,6 +34,6 @@ startButton.addEventListener("click", (e) => {
 stopButton.addEventListener("click", (e) => {
   if (isRunning) {
     clearInterval(timerInterval);
-    isRunning = false;
+    // isRunning = false;
   }
 });
