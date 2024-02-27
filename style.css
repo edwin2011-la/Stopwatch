@@ -11,28 +11,29 @@ body {
   justify-content: center;
   flex-direction: column;
   /* min-height: 300vh; */
-  background: linear-gradient(to bottom, blue, blueviolet);
   font-family: Poppins, "san-serif";
 }
 
 .home {
-  min-height: 85vh;
+  min-height: 95vh;
   width: 100%;
   background-color: white;
 }
 
 .count-site {
-  min-height: 80vh;
+  min-height: 90vh;
   background-color: white;
   width: 100%;
 }
 
 .container {
-  height: 80vh;
+  width: 100%;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background: linear-gradient(to bottom, blue, blueviolet);
 }
 
 .wrapper {
