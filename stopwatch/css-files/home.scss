@@ -1,0 +1,50 @@
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+//   border : 1px solid red;
+  box-shadow: 0 2px 4px rgba(65, 64, 64, 0.45);
+  ul {
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+    li {
+      list-style: none;
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+}
+
+.clock-site{
+    color: red;
+    position: relative;
+}
+
+// img{
+//   height: 100px;
+// //   position: absolute;
+// //   left: 350px; 
+// //   top: -10px; 
+// }
+
+aside{
+    margin-left: 100px;
+    margin-top: 40px;
+    h1{
+        margin: 0;
+        max-width: 350px;
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    p{
+        max-width: 540px;
+        line-height: 25px;
+        letter-spacing: 0.1px;
+        color: rgba(44, 42, 42, 0.75);
+        margin-top: 30px;
+    }
+}
