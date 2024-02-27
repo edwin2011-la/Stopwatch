@@ -1,17 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=Epilogue:wght@300&family=Fraunces:opsz@9..144&family=Hanken+Grotesk:ital,wght@1,300&family=Inter&family=Montserrat&family=Outfit:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 body {
+  margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  min-height: 100vh;
+  /* min-height: 300vh; */
   background: linear-gradient(to bottom, blue, blueviolet);
   font-family: Poppins, "san-serif";
 }
 
+.home {
+  min-height: 100vh;
+  width: 100%;
+  background-color: white;
+}
+
 .container {
-    background-color: white;
+  background-color: white;
   padding: 50px;
   display: flex;
   align-items: center;
@@ -19,6 +26,7 @@ body {
   flex-direction: column;
   border-radius: 10px;
   box-shadow: -1px 1px 2px 3px grey;
+  height: 80vh;
 }
 
 .stopwatch {
