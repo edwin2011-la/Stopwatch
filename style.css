@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=Epilogue:wght@300&family=Fraunces:opsz@9..144&family=Hanken+Grotesk:ital,wght@1,300&family=Inter&family=Montserrat&family=Outfit:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+:root {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   display: flex;
@@ -12,12 +16,25 @@ body {
 }
 
 .home {
-  min-height: 100vh;
+  min-height: 85vh;
   width: 100%;
   background-color: white;
 }
 
+.count-site {
+  min-height: 80vh;
+  background-color: white;
+}
+
 .container {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.wrapper {
   background-color: white;
   padding: 50px;
   display: flex;
@@ -26,7 +43,6 @@ body {
   flex-direction: column;
   border-radius: 10px;
   box-shadow: -1px 1px 2px 3px grey;
-  height: 80vh;
 }
 
 .stopwatch {
