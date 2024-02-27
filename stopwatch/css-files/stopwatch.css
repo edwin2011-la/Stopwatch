@@ -1,7 +1,48 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=Epilogue:wght@300&family=Fraunces:opsz@9..144&family=Hanken+Grotesk:ital,wght@1,300&family=Inter&family=Montserrat&family=Outfit:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  box-shadow: 0 2px 4px rgba(65, 64, 64, 0.45);
+}
+nav ul {
+  display: flex;
+  gap: 30px;
+  font-size: 20px;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.clock-site {
+  color: red;
+  position: relative;
+}
+
+aside {
+  margin-left: 100px;
+  margin-top: 40px;
+}
+aside h1 {
+  margin: 0;
+  max-width: 350px;
+  font-size: 50px;
+  line-height: 60px;
+}
+aside p {
+  max-width: 540px;
+  line-height: 25px;
+  letter-spacing: 0.1px;
+  color: rgba(44, 42, 42, 0.75);
+  margin-top: 30px;
+}
+
 :root {
   scroll-behavior: smooth;
-  scroll-snap-align: 2;
 }
 
 body {

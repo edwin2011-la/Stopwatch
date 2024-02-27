@@ -1,3 +1,5 @@
+//Stopwatch
+
 let hoursReporter = document.querySelector("#hours");
 let minutesReporter = document.querySelector("#minutes");
 let secondsReporter = document.querySelector("#seconds");
@@ -66,3 +68,12 @@ function resetAll() {
   minutes = 0;
   hours = 0;
 }
+
+
+//Countdown timer
+
+let beginCountdown = document.getElementById('start');
+
+beginCountdown.addEventListener('click', () => {
+
+})
