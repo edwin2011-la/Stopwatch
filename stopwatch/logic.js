@@ -69,31 +69,33 @@ function resetAll() {
   hours = 0;
 }
 
-
 //Countdown timer
 
-{/* <input type="number" id="timeInput" min="1">
+{
+  /* <input type="number" id="timeInput" min="1">
 <button id="start">Start</button>
-<p id="timeOutput"></p> */}
+<p id="timeOutput"></p> */
+}
 
-let beginCountdown = document.getElementById('start');
+let beginCountdown = document.getElementById("start");
 
-beginCountdown.addEventListener('click', () => {
-  const timeInput = document.getElementById('timeInput');
+beginCountdown.addEventListener("click", () => {
+  const timeInput = document.getElementById("timeInput");
   const time = timeInput.value * 60;
-  const timeOutput = document.getElementById('timeOutput');
+  const timeOutput = document.getElementById("timeOutput");
 
-  function a(){
+  function a() {
     time--;
     const minutes = Math.floor(time / 60);
     const seconds = time % 60;
-    timeOutput.textContent = minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
+    timeOutput.textContent =
+      minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
 
-    if (time <= 0){
-      
+    const timer = setInterval(a, 1000);
+
+    if (time <= 0) {
+      clearInterval(timer);
+      timeOutput.textContent = "Time up";
     }
-
   }
-
-  const timer = setInterval(a, 1000);
-})
+});
