@@ -24,6 +24,7 @@ body {
 .count-site {
   min-height: 80vh;
   background-color: white;
+  width: 100%;
 }
 
 .container {
