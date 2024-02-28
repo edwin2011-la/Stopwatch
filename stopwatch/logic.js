@@ -91,11 +91,10 @@ beginCountdown.addEventListener("click", () => {
     timeOutput.textContent =
       minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
 
-    const timer = setInterval(a, 1000);
-
     if (time <= 0) {
       clearInterval(timer);
       timeOutput.textContent = "Time up";
     }
   }
+  timer = setInterval(a, 1000);
 });

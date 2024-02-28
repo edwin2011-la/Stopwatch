@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=Epilogue:wght@300&family=Fraunces:opsz@9..144&family=Hanken+Grotesk:ital,wght@1,300&family=Inter&family=Montserrat&family=Outfit:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  scroll-behavior: smooth;
+}
+
 nav {
   display: flex;
   justify-content: center;
@@ -8,7 +12,7 @@ nav {
 nav ul {
   display: flex;
   gap: 30px;
-  font-size: 20px;
+  font-size: 18px;
 }
 nav ul li {
   list-style: none;
@@ -18,6 +22,12 @@ nav ul li a {
   color: black;
 }
 
+.login {
+  background-color: blue;
+  padding: 10px;
+  border-radius: 25px;
+}
+
 .clock-site {
   color: red;
   position: relative;
@@ -25,7 +35,7 @@ nav ul li a {
 
 aside {
   margin-left: 100px;
-  margin-top: 40px;
+  margin-top: 100px;
 }
 aside h1 {
   margin: 0;
@@ -39,6 +49,27 @@ aside p {
   letter-spacing: 0.1px;
   color: rgba(44, 42, 42, 0.75);
   margin-top: 30px;
+}
+aside button {
+  padding: 20px;
+  font-size: 16px;
+  width: 260px;
+  margin-top: 30px;
+  box-shadow: 2px 2px 2px 1px rgba(108, 104, 104, 0.915);
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+  transition: all 2s;
+  cursor: grab;
+  box-shadow: 2px 2px 2px 1px rgba(65, 64, 64, 0.45);
+}
+
+img {
+  margin-left: 900px;
+  position: relative;
+  bottom: 300px;
 }
 
 :root {
