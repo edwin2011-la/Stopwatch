@@ -72,6 +72,12 @@ img {
   bottom: 300px;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: blue;
+}
+
 :root {
   scroll-behavior: smooth;
 }

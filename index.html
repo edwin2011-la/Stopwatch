@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="stopwatch/css-files/countdown.css" />
     <link rel="stylesheet" href="stopwatch/css-files/home.css" />
     <link rel="stylesheet" href="stopwatch/css-files/stopwatch.css" />
     <meta charset="UTF-8" />
@@ -49,10 +50,14 @@
       </div>
     </section>
     <section id="count-site" class="count-site">
-      <h2>Enter in minutes</h2>
-      <input type="number" id="timeInput" min="1" />
-      <button id="start" onclick="startCountdown()">Start</button>
+      <h2>Enter your time in minutes</h2>
+      <input type="number" name="" id="timeInput" />
       <p id="timeOutput"></p>
+
+      <div class="bttons">
+        <button id="startCount">Start</button>
+        <button id="endCount">Stop</button>
+      </div>
     </section>
     <script src="logic.js"></script>
   </body>
